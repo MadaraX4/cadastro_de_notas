@@ -10,27 +10,33 @@
 <body>
     <h2>Cadastre aqui sua nota!</h2>
 
-    <form>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Aluno</label>
-            <input type="text" class="form-control" id="exampleInputNome" aria-describedby="nomeHelp" placeholder="Nome Completo">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Disciplina</label>
-            <input type="text" class="form-control" id="exampleInputDisciplina" placeholder="Disciplina">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword1">Nota 01</label>
-            <input type="number" class="form-control" id="exampleInputNota1" placeholder="Nota">
-        </div>
+   
+    <div class="container">
+        <form name="notas" id="notas" method="POST" enctype="multipart/form-data" action="cadastro.php">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Aluno</label>
+                <input type="text" class="form-control" name="nome" id="nome" aria-describedby="nomeHelp" placeholder="Nome Completo">
+            </div>
 
-        <div class="form-group">
-            <label for="exampleInputPassword1">Nota 02</label>
-            <input type="number" class="form-control" id="exampleInputnota2" placeholder="Nota">
-        </div>
+             <div class="form-group">
+                <label for="exampleInputPassword1">Disciplina</label>
+                <input type="text" class="form-control" name="disciplina" id="disciplina" placeholder="Disciplina">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Nota 01</label>
+                <input type="number" class="form-control" name="nota1" id="nota1" placeholder="Nota">
+            </div>
+
+            <div class="form-group">
+                <label for="exampleInputPassword1">Nota 02</label>
+                <input type="number" class="form-control" name="nota2" id="nota2" placeholder="Nota">
+            </div>
         
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>  
+    
     
 </body>
 </html>

@@ -16,6 +16,7 @@
         echo "<tr>";
         echo "<th scope='col'>ID</th>";
         echo "<th scope='col'>NOME</th>";
+        echo "<th scope='col'>Disciplina</th>";
         echo "<th scope='col'>Nota 1</th>";
         echo "<th scope='col'>Nota 2</th>";
         echo "</tr>";
